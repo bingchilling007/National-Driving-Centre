@@ -9,3 +9,4 @@
 .stepBody{color:#ffffff8c;font-size:.9rem;line-height:1.72}
 @media (max-width:1024px){.steps{grid-template-columns:repeat(2,1fr)}
 @media (max-width:640px){.steps{grid-template-columns:1fr}
+}}

@@ -8,3 +8,4 @@
 .stat{border-bottom:1px solid #ffffff14;border-right:none}
 .stat:nth-child(odd){border-right:1px solid #ffffff14}
 .stat:last-child,.stat:nth-last-child(2):nth-child(odd){border-bottom:none}
+}

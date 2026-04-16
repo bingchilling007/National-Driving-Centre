@@ -23,3 +23,4 @@
 .cardCta:hover{background:var(--navy-700);transform:translateY(-1px)}
 @media (max-width:1024px){.grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
 @media (max-width:640px){.grid{max-width:100%}
+}}

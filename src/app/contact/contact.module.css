@@ -23,3 +23,4 @@ a.infoCard:hover{border-color:var(--gold);box-shadow:var(--shadow-sm);transform:
 .successState p{color:var(--text-muted);margin-bottom:2rem;font-size:1rem;line-height:1.7}
 .successState a{color:var(--navy-700);font-weight:700}
 @media (max-width:1024px){.grid,.formRow{grid-template-columns:1fr}
+}
