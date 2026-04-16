@@ -1,0 +1,10 @@
+.bar{background:var(--navy-900);border-bottom:3px solid var(--gold);padding:3.5rem 0}
+.grid{grid-template-columns:repeat(4,1fr);gap:1rem;display:grid}
+.stat{text-align:center;border-right:1px solid #ffffff14;padding:1rem}
+.stat:last-child{border-right:none}
+.value{font-family:var(--font-heading);color:var(--gold);margin-bottom:.5rem;font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1}
+.label{color:#fff9;font-size:.88rem;font-weight:600;font-family:var(--font-heading);text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:768px){.grid{grid-template-columns:repeat(2,1fr);gap:0}
+.stat{border-bottom:1px solid #ffffff14;border-right:none}
+.stat:nth-child(odd){border-right:1px solid #ffffff14}
+.stat:last-child,.stat:nth-last-child(2):nth-child(odd){border-bottom:none}

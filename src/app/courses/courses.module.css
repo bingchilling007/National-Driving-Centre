@@ -1,0 +1,41 @@
+.tabs{background:var(--grey-100);border-radius:var(--radius-lg);flex-wrap:wrap;gap:.5rem;margin-bottom:2rem;padding:.5rem;display:flex}
+.tab{border-radius:var(--radius-md);font-family:var(--font-heading);color:var(--grey-600);white-space:nowrap;background:0 0;flex:1;justify-content:center;align-items:center;gap:.5rem;padding:.75rem 1.5rem;font-size:.92rem;font-weight:700;transition:all .18s;display:flex}
+.tab:hover{background:var(--white);color:var(--navy-900)}
+.tabActive{background:var(--navy-900);color:var(--white);box-shadow:var(--shadow-sm)}
+.allIncBanner{border-radius:var(--radius-md);color:var(--grey-800);background:#22c55e12;border:1px solid #22c55e33;align-items:center;gap:.75rem;margin-bottom:2.5rem;padding:1rem 1.5rem;font-size:.92rem;display:flex}
+.allIncBanner span{color:var(--green-500);font-size:1.2rem}
+.allIncBanner strong{color:var(--navy-900)}
+.courseGrid{gap:2rem;display:grid}
+.courseCard{background:var(--white);border:1px solid var(--grey-200);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);padding:2.5rem;transition:box-shadow .2s}
+.courseCard:hover{box-shadow:var(--shadow-md)}
+.courseCardHeader{flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:1.25rem;display:flex}
+.courseCat{letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);font-size:.78rem;font-weight:700;font-family:var(--font-heading);margin-bottom:.3rem;display:block}
+.courseTitle{font-family:var(--font-heading);color:var(--navy-900);font-size:1.4rem;font-weight:800}
+.courseTag{background:var(--navy-100);color:var(--navy-700);font-size:.75rem;font-weight:700;font-family:var(--font-heading);text-transform:uppercase;letter-spacing:.04em;border-radius:20px;flex-shrink:0;padding:.3rem .9rem}
+.courseDesc{color:var(--text-muted);margin-bottom:1.75rem;font-size:.97rem;line-height:1.72}
+.courseMeta{background:var(--navy-950);border-radius:var(--radius-md);flex-wrap:wrap;align-items:flex-start;gap:2rem;margin-bottom:2rem;padding:1.5rem;display:flex}
+.coursePrice{flex:1}
+.courseDuration{color:var(--white);opacity:.85;border-left:1px solid #ffffff1a;align-items:center;gap:.625rem;padding-left:2rem;display:flex}
+.priceLabel{text-transform:uppercase;letter-spacing:.1em;color:#ffffff73;font-size:.7rem;font-weight:700;font-family:var(--font-heading);margin-bottom:.25rem}
+.priceValue{font-family:var(--font-heading);color:var(--gold);margin-bottom:.25rem;font-size:2.25rem;font-weight:900;line-height:1}
+.priceNote{color:#ffffff80;font-size:.8rem}
+.altPrice{font-family:var(--font-heading);color:var(--gold-light);margin-top:.5rem;font-size:.9rem;font-weight:700}
+.altPrice span{color:#ffffff80;font-size:.8rem;font-weight:400}
+.durationValue{font-family:var(--font-heading);color:var(--white);font-size:1.15rem;font-weight:800}
+.courseDetails{grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem;display:grid}
+.detailTitle{font-family:var(--font-heading);text-transform:uppercase;letter-spacing:.08em;color:var(--navy-700);margin-bottom:.875rem;font-size:.88rem;font-weight:700}
+.jobTags{flex-wrap:wrap;gap:.4rem;display:flex}
+.jobTag{background:var(--navy-100);color:var(--navy-700);font-size:.78rem;font-weight:600;font-family:var(--font-heading);border-radius:20px;padding:.25rem .75rem}
+.cardActions{border-top:1px solid var(--grey-100);flex-wrap:wrap;gap:1rem;padding-top:1.75rem;display:flex}
+.financeNote{background:linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);border-radius:var(--radius-xl);color:var(--white);border:1px solid #c9a84c33;margin-top:3rem;padding:2rem 2.5rem}
+.financeNote h3{font-family:var(--font-heading);color:var(--gold);margin-bottom:.5rem;font-size:1.3rem;font-weight:800}
+.financeNote p{color:#ffffffb3;font-size:.97rem;line-height:1.7}
+.financeNote a{color:var(--gold-light);font-weight:700}
+@media (max-width:768px){.courseDetails{grid-template-columns:1fr}
+.courseCard{padding:1.5rem}
+.tabs{gap:.25rem}
+.tab{padding:.625rem .875rem;font-size:.82rem}
+.courseMeta{flex-direction:column;gap:1rem}
+.courseDuration{border-top:1px solid #ffffff1a;border-left:none;padding-top:1rem;padding-left:0}
+.cardActions{flex-direction:column}
+.cardActions .btn{justify-content:center;width:100%}

@@ -1,0 +1,12 @@
+.section{background:var(--white)}
+.header{margin-bottom:3.5rem}
+.grid{grid-template-columns:repeat(3,1fr);gap:1.5rem;display:grid}
+.card{border-radius:var(--radius-lg);border:1px solid var(--grey-200);background:var(--white);transition:transform .22s var(--ease-out), box-shadow .22s var(--ease-out), border-color .22s;padding:2rem;position:relative;overflow:hidden}
+.card:before{content:"";background:linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);transform-origin:0;height:3px;transition:transform .3s var(--ease-out);position:absolute;top:0;left:0;right:0;transform:scaleX(0)}
+.card:hover{box-shadow:var(--shadow-md);border-color:var(--navy-100);transform:translateY(-5px)}
+.card:hover:before{transform:scaleX(1)}
+.iconBox{background:linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 100%);border-radius:var(--radius-md);width:54px;height:54px;color:var(--gold);justify-content:center;align-items:center;margin-bottom:1.25rem;display:flex}
+.cardTitle{font-family:var(--font-heading);color:var(--navy-900);margin-bottom:.625rem;font-size:1.1rem;font-weight:800}
+.cardBody{color:var(--text-muted);font-size:.92rem;line-height:1.72}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(2,1fr)}
+@media (max-width:600px){.grid{grid-template-columns:1fr}

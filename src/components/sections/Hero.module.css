@@ -1,0 +1,29 @@
+.hero{align-items:center;min-height:100vh;padding-top:5rem;display:flex;position:relative;overflow:hidden}
+.bg{position:absolute;inset:0}
+.bgImg{object-fit:cover;object-position:center 40%}
+.overlay{background:linear-gradient(90deg,#06101feb 0%,#06101fc7 50%,#06101f66 100%);position:absolute;inset:0}
+.overlayGradient{background:linear-gradient(#0000 60%,#06101fcc 100%);position:absolute;inset:0}
+.content{z-index:2;max-width:780px;padding-top:4rem;padding-bottom:6rem;position:relative}
+.chip{font-size:.78rem;font-weight:700;font-family:var(--font-heading);letter-spacing:.04em;color:var(--gold);text-transform:uppercase;animation:fadeUp .6s var(--ease-out) both;background:#c9a84c29;border:1px solid #c9a84c59;border-radius:20px;align-items:center;gap:.5rem;margin-bottom:1.5rem;padding:.4rem 1rem;display:inline-flex}
+.headline{font-family:var(--font-heading);color:var(--white);animation:fadeUp .65s 80ms var(--ease-out) both;margin-bottom:1.5rem;font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;line-height:1.06}
+.highlight{background:linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text}
+.sub{color:#ffffffc7;max-width:560px;animation:fadeUp .65s .16s var(--ease-out) both;margin-bottom:2rem;font-size:clamp(1.05rem,2vw,1.25rem);line-height:1.75}
+.sub em{color:var(--gold-light);font-style:normal}
+.trustBadges{animation:fadeUp .65s .24s var(--ease-out) both;flex-wrap:wrap;align-items:center;gap:1rem;margin-bottom:2.25rem;display:flex}
+.trustItem{font-size:.88rem;font-weight:600;font-family:var(--font-heading);color:#ffffffd9;align-items:center;gap:.4rem;display:flex}
+.trustDivider{background:#fff3;width:1px;height:16px}
+.ctas{animation:fadeUp .65s .3s var(--ease-out) both;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;display:flex}
+.courseLinks{animation:fadeUp .65s .38s var(--ease-out) both;flex-wrap:wrap;align-items:center;gap:.6rem;display:flex}
+.courseLinksLabel{color:#ffffff73;font-size:.78rem;font-weight:600;font-family:var(--font-heading);text-transform:uppercase;letter-spacing:.05em}
+.courseChip{font-size:.8rem;font-weight:600;font-family:var(--font-heading);color:#ffffffb3;border:1px solid #fff3;border-radius:20px;padding:.3rem .85rem;transition:background .18s,color .18s,border-color .18s}
+.courseChip:hover{border-color:var(--gold);color:var(--gold);background:#c9a84c2e}
+.scroll{width:28px;height:44px;animation:fadeUp 1s .8s var(--ease-out) both;border:2px solid #ffffff40;border-radius:14px;justify-content:center;align-items:flex-start;padding-top:6px;display:flex;position:absolute;bottom:2rem;left:50%;transform:translate(-50%)}
+.scrollDot{background:var(--gold);border-radius:2px;width:4px;height:8px;animation:1.8s infinite scrollBounce}
+@keyframes scrollBounce{0%,to{opacity:1;transform:translateY(0)}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(20px)}
+@media (max-width:768px){.hero{min-height:auto;padding-top:4rem}
+.content{max-width:100%}
+.overlay{background:linear-gradient(#06101fe0 0%,#06101fd1 100%)}
+.ctas{flex-direction:column}
+.ctas .btn{justify-content:center;width:100%}
+.scroll{display:none}

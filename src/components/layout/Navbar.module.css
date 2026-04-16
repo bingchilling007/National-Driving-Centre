@@ -1,0 +1,34 @@
+.topBar{background:var(--navy-950);z-index:100;border-bottom:1px solid #ffffff0f;padding:.5rem 0;position:relative}
+.topBarInner{justify-content:space-between;align-items:center;display:flex}
+.topBarText{color:#ffffff8c;font-size:.78rem;font-weight:500}
+.topBarPhone{color:var(--gold);font-size:.82rem;font-weight:700;font-family:var(--font-heading);align-items:center;gap:.35rem;transition:color .18s;display:flex}
+.topBarPhone:hover{color:var(--gold-light)}
+.nav{z-index:99;-webkit-backdrop-filter:blur(12px);background:#0a1628eb;border-bottom:1px solid #ffffff14;transition:background .25s,box-shadow .25s;position:sticky;top:0}
+.nav.scrolled{background:#0a1628fa;box-shadow:0 2px 24px #0000004d}
+.inner{align-items:center;gap:2rem;height:70px;display:flex}
+.logo{flex-shrink:0;align-items:center;gap:.75rem;text-decoration:none;display:flex}
+.logoMark{background:linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);width:42px;height:42px;font-family:var(--font-heading);color:var(--navy-950);letter-spacing:.05em;border-radius:8px;flex-shrink:0;justify-content:center;align-items:center;font-size:.85rem;font-weight:900;display:flex}
+.logoText{flex-direction:column;display:flex}
+.logoName{font-family:var(--font-heading);color:var(--white);font-size:.95rem;font-weight:800;line-height:1.15}
+.logoSub{color:var(--gold);letter-spacing:.04em;font-size:.68rem;font-weight:600}
+.navLinks{align-items:center;gap:.25rem;margin-left:auto;list-style:none;display:flex}
+.navItem{position:relative}
+.navLink{font-family:var(--font-heading);color:#ffffffd1;white-space:nowrap;border-radius:6px;align-items:center;gap:.25rem;padding:.5rem .875rem;font-size:.88rem;font-weight:600;transition:color .18s,background .18s;display:flex}
+.navLink:hover{color:var(--white);background:#ffffff14}
+.dropdown{background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-lg);z-index:200;min-width:220px;animation:dropIn .18s var(--ease-out);padding:.5rem;position:absolute;top:calc(100% + 8px);left:50%;transform:translate(-50%)}
+@keyframes dropIn{0%{opacity:0;transform:translate(-50%)translateY(-8px)}
+.dropdownItem{font-family:var(--font-heading);color:var(--navy-800);border-radius:8px;padding:.625rem 1rem;font-size:.9rem;font-weight:600;transition:background .15s,color .15s;display:block}
+.dropdownItem:hover{background:var(--navy-900);color:var(--white)}
+.navCta{flex-shrink:0}
+.burger{color:var(--white);padding:.25rem;display:none}
+.mobileMenu{background:var(--navy-950);max-height:0;transition:max-height .35s var(--ease-out);border-top:1px solid #ffffff14;flex-direction:column;display:none;overflow:hidden}
+.mobileMenu.mobileOpen{max-height:600px}
+.mobileLink{font-family:var(--font-heading);color:#ffffffd9;border-bottom:1px solid #ffffff0d;padding:.9rem 1.5rem;font-size:1rem;font-weight:700;display:block}
+.mobileLink:hover{color:var(--gold)}
+.mobileSubLinks{background:#0003}
+.mobileSubLink{color:#fff9;font-size:.9rem;font-family:var(--font-heading);border-bottom:1px solid #ffffff0a;padding:.65rem 2rem;display:block}
+.mobileSubLink:hover{color:var(--gold)}
+@media (max-width:1024px){.navLinks,.navCta{display:none}
+.burger{margin-left:auto;display:flex}
+.mobileMenu{display:flex}
+.topBarText{display:none}

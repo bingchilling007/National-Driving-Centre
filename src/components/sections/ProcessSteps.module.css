@@ -1,0 +1,11 @@
+.section{background:var(--navy-950);position:relative;overflow:hidden}
+.section:before{content:"";pointer-events:none;background:radial-gradient(circle,#c9a84c0f 0%,#0000 70%);border-radius:50%;width:600px;height:600px;position:absolute;top:-100px;right:-100px}
+.steps{grid-template-columns:repeat(3,1fr);gap:2rem;display:grid;position:relative}
+.step{border-radius:var(--radius-lg);background:#ffffff08;border:1px solid #ffffff14;padding:2rem;transition:background .2s,border-color .2s;position:relative}
+.step:hover{background:#ffffff0e;border-color:#c9a84c40}
+.stepNum{font-family:var(--font-heading);color:#c9a84c26;font-size:3rem;font-weight:900;line-height:1;position:absolute;top:1.25rem;right:1.5rem}
+.stepIcon{background:linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 100%);border-radius:var(--radius-md);width:50px;height:50px;color:var(--navy-950);justify-content:center;align-items:center;margin-bottom:1.25rem;display:flex}
+.stepTitle{font-family:var(--font-heading);color:var(--white);margin-bottom:.625rem;font-size:1.05rem;font-weight:800}
+.stepBody{color:#ffffff8c;font-size:.9rem;line-height:1.72}
+@media (max-width:1024px){.steps{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.steps{grid-template-columns:1fr}

@@ -1,0 +1,38 @@
+.footer{background:var(--navy-950);color:var(--white)}
+.ctaStrip{background:linear-gradient(135deg, var(--navy-800) 0%, var(--navy-700) 100%);border-top:1px solid #ffffff14;border-bottom:1px solid #c9a84c33;padding:3rem 0}
+.ctaInner{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:2rem;display:flex}
+.ctaLabel{letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem;font-size:.82rem;font-weight:700}
+.ctaTitle{font-family:var(--font-heading);color:var(--white);font-size:clamp(1.5rem,3vw,2rem);font-weight:800}
+.ctaBtns{flex-wrap:wrap;gap:1rem;display:flex}
+.main{padding:4rem 0}
+.grid{grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;display:grid}
+.logo{align-items:center;gap:.75rem;margin-bottom:1.25rem;display:flex}
+.logoMark{background:linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);width:44px;height:44px;font-family:var(--font-heading);color:var(--navy-950);border-radius:8px;flex-shrink:0;justify-content:center;align-items:center;font-size:.9rem;font-weight:900;display:flex}
+.logoName{font-family:var(--font-heading);color:var(--white);font-size:.95rem;font-weight:800}
+.logoSub{color:var(--gold);font-size:.7rem;font-weight:600}
+.brandDesc{color:#ffffff8c;margin-bottom:1.25rem;font-size:.9rem;line-height:1.7}
+.trustRow{flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem;display:flex}
+.trustBadge{color:var(--gold);font-size:.75rem;font-weight:700;font-family:var(--font-heading);background:#c9a84c1f;border:1px solid #c9a84c40;border-radius:20px;align-items:center;gap:.3rem;padding:.3rem .75rem;display:inline-flex}
+.socials{gap:.6rem;display:flex}
+.social{color:#fff9;background:#ffffff12;border:1px solid #ffffff1a;border-radius:8px;justify-content:center;align-items:center;width:38px;height:38px;transition:background .18s,color .18s;display:flex}
+.social:hover{background:var(--gold);color:var(--navy-950)}
+.colTitle{font-family:var(--font-heading);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;font-size:.82rem;font-weight:700}
+.linkList{flex-direction:column;gap:.65rem;display:flex}
+.footerLink{color:#ffffff94;font-size:.9rem;transition:color .18s}
+.footerLink:hover{color:var(--gold)}
+.contactList{flex-direction:column;gap:.875rem;display:flex}
+.contactList li{color:#ffffffb3;align-items:flex-start;gap:.625rem;font-size:.9rem;display:flex}
+.contactList li svg{color:var(--gold);flex-shrink:0;margin-top:2px}
+.contactList a{color:#ffffffb3;transition:color .18s}
+.contactList a:hover{color:var(--gold)}
+.bottomBar{border-top:1px solid #ffffff14;padding:1.25rem 0}
+.bottomInner{flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;display:flex}
+.copyright{color:#ffffff59;font-size:.82rem}
+.bottomLinks{gap:1.5rem;display:flex}
+.bottomLinks a{color:#ffffff59;font-size:.82rem;transition:color .18s}
+.bottomLinks a:hover{color:var(--gold)}
+@media (max-width:1024px){.grid{grid-template-columns:1fr 1fr}
+@media (max-width:640px){.grid{grid-template-columns:1fr;gap:2rem}
+.ctaInner{flex-direction:column;align-items:flex-start}
+.ctaBtns{flex-direction:column;width:100%}
+.ctaBtns .btn{justify-content:center;width:100%}
